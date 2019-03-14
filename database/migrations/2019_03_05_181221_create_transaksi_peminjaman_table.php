@@ -15,15 +15,15 @@ class CreateTransaksiPeminjamanTable extends Migration
     {
         Schema::create('transaksi_peminjaman', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('id_film');
-            $table->string('nama_peminjam');
-            $table->string('no_ktp');
-            $table->string('foto_ktp');
-            $table->string('tanggal_pinjam');
-            $table->string('tanggal_kembali');
-            $table->string('harga_sewa');
-            $table->string('status');
-            $table->string('tanggal_input_data');
+            $table->string('id_film',100);
+            $table->string('nama_peminjam',100);
+            $table->string('no_ktp',100);
+            $table->string('foto_ktp',100);
+            $table->string('tanggal_pinjam',100);
+            $table->string('tanggal_kembali',100);
+            $table->string('harga_sewa',100);
+            $table->string('status',100);
+            $table->string('tanggal_input_data',100);
 
             
         });
